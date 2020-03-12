@@ -1,0 +1,162 @@
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	background: url("./img/bg.jpg");
+	background-size: auto;
+	background-size: cover;
+	display: table;
+	width: 100vw;
+	height: 100vh;
+}
+h1 {
+	margin: 0;
+}
+img, iframe {
+	max-width: 100%;
+}
+.mobile_only {
+	display: none;
+}
+@media screen and (max-width: 620px), screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-device-height: 720px) and (max-device-width: 1280px) and (max-width: 999px), screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-device-width: 1000px) and (max-width: 999px) {
+	.desktop_only {
+		display: none;
+	}
+	.mobile_only {
+		display: inline-block;
+	}
+}
+.white_bg {
+	background: #fff;
+}
+
+#header {
+	text-align: center;
+}
+.header_container {
+	max-width: 100%;
+	margin: auto;
+	position: relative;
+}
+#header .logo {
+	margin-top: 39px;
+}
+#header h1 {
+	font-size: 0;
+}
+
+@media screen and (max-width: 620px), screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-device-height: 720px) and (max-device-width: 1280px) and (max-width: 999px), screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-device-width: 1000px) and (max-width: 999px) {
+	#header .logo {
+		margin-top: 39px;
+	}
+	#header .logo img {
+		max-width: 100%;
+	}
+}
+
+.newspaper_bg {
+	width: 1200px;
+	max-width: 100vw;
+	margin: auto;
+	margin-top: 95px;
+}
+
+.title1 {
+	font-family: "Acta Bold";
+	font-size: 73px;
+	font-weight: 300;
+	letter-spacing: -1px;
+	line-height: 60px;
+	margin-left: 40px;
+	margin-bottom: 10px;
+}
+
+.title2 {
+	font-family: "Acta Bold";
+	font-size: 40px;
+	font-weight: 300;
+	letter-spacing: -1px;
+	line-height: 60px;
+	margin-left: 40px;
+	margin-bottom: 30px;
+}
+
+.title3 {
+	color: #555555;
+	font-family: "Ringside Narrow Bold";
+	font-size: 22px;
+	font-weight: 300;
+	letter-spacing: -0.46px;
+	line-height: 29px;
+	margin-left: 40px;
+}
+
+.app_downloads {
+	margin-left: 40px;
+	margin-top: 30px;
+}
+
+
+.app_downloads > a {
+	margin-right: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+	.title2 {
+		font-size: 30px;
+		line-height: 25px;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	body {
+		margin: 0;
+		-webkit-font-smoothing: antialiased;
+		background: none;
+	}
+	#header {
+		margin: 0 20px;
+	}
+	.m_bg {
+		width: 100vw;
+		height: 100vh;
+		background: url("./img/bg_m.jpg");
+		background-size: 100vw auto;
+		margin-top: -10vh;
+		z-index: 1;
+		position: relative;
+	}
+	.newspaper_bg {
+		margin-top: 25px;
+		position: relative;
+		z-index: 100;
+	}
+	.title1 {
+		font-size: 43px;
+		line-height: 39px;
+		margin-left: 20px;
+	}
+	.title2 {
+		font-size: 25px;
+		line-height: 27px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+	}
+	.title3 {
+		font-size: 16px;
+		line-height: 19px;
+		margin-left: 20px;
+	}
+	.app_downloads {
+		margin-left: 20px;
+	}
+	.app_downloads > a {
+		width: 42%;
+		float: left;
+	}
+	.app_downloads > a:nth-child(2) {
+		width: 47%;
+	}
+	.app_downloads img {
+		width: 100%;
+	}
+}
