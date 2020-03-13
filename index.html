@@ -34,10 +34,12 @@
 //	    }		
 	}
 	if(/Mobi|android/i.test(navigator.userAgent)){
-        	window.location.href = "https://apps.apple.com/us/app/the-epoch-times/id670443321";
+//        	window.location.href = "https://apps.apple.com/us/app/the-epoch-times/id670443321";
+		return 'android';
     	}
     	if(/Mobi|iPad|iPhone|iPod/i.test(navigator.userAgent)){
-        	window.location.href = "https://play.google.com/store/apps/details?id=com.theepochtimes.news";
+//        	window.location.href = "https://play.google.com/store/apps/details?id=com.theepochtimes.news";
+		return 'ios';
     	}	
 		
 	</script>
